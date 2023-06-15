@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div style="padding: 3%">
+        <h1 th:text=" 'Model & Model and View' "></h1>
+        <a th:href="@{/test1?n=100&m=200}">test1</a></br>
+        <a th:href="@{/test2?n=5}">test2</a></br>
+        <a th:href="@{/test3?n=10}">test3</a></br>
+    </div>
+</body>
+</html>
