@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div style="padding: 5%">
+        <h1 th:text=" 'Model & Model and View' "></h1>
+        <form method="post" action="/test5" >
+            <div class="form-group">
+                <label>n 입력</label>
+                <br>
+                <input type="text" class="form-control" id="n" name="n" placeholder="100 이하 정수 n">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>m 입력</label>
+                <br>
+                <input type="text" class="form-control" id="m" name="m" placeholder="100 이하 정수 m">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-default">test4</button>
+        </form>
+    </div>
+</body>
+</html>

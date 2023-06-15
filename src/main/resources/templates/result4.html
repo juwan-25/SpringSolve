@@ -9,14 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="padding: 3%">
-        <h1 th:text=" 'Model & Model and View' "></h1>
-        <a th:href="@{/test1?n=100&m=200}">test1</a></br>
-        <a th:href="@{/test2?n=5}">test2</a></br>
-        <a th:href="@{/test3?n=10}">test3</a></br>
-        <a th:href="@{/test4}">test4</a></br>
-        <a th:href="@{/test5}">test5</a></br>
-        <a th:href="@{/test6}">test6</a></br>
+<div style="padding: 3%">
+    <h1 th:text=" 'Result4' "></h1>
+    <div th:each="item: ${list}">
+        <span th:text="${item}"></span>
     </div>
+</div>
 </body>
 </html>
